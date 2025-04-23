@@ -1,0 +1,8 @@
+# Ignore all files in the node_modules directory
+node_modules/
+# Ignore .env files
+*.env
+# Other Files that should be ignored
+*.log
+*.DS_Store
+package-lock.json

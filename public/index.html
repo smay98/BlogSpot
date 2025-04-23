@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Chat App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Login Page -->
+  <div class="container">
+    <div id="login" class="box">
+      <h2>BlogSpot</h2>
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <!-- Chat Room -->
+    <div id="chat" class="box hidden">
+      <h2>Chat Room</h2>
+      <div id="messages"></div>
+      <form id="chatForm">
+        <input type="text" id="messageInput" placeholder="Type your message" required>
+        <button type="submit">Send</button>
+      </form>
+      <button id="logoutBtn">Logout</button>
+    </div>
+    <div id="allChats" class="box hidden">
+      <h2>All Chats</h2>
+      <table id="chatsTable" border="1" style="width: 100%; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Messages</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
